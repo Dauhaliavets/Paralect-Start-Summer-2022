@@ -1,0 +1,10 @@
+.user_repositories {
+	width: 100%;
+}
+.repositories_list {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 130%;
+	color: #000000;
+}

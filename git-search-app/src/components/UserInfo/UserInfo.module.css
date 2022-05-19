@@ -1,0 +1,63 @@
+.user__info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 12px;
+}
+.user__avatar {
+	width: 280px;
+	height: 280px;
+}
+.avatar {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.name {
+	margin-top: 12px;
+	text-align: left;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 130%;
+	color: #000000;
+}
+.login {
+	margin-top: 12px;
+	text-align: left;
+}
+.login__link {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #0064EB;
+}
+.follow {
+	margin-top: 25px;
+	display: flex;
+	gap: 16px;
+}
+.followers {
+	padding-left: 32px;
+	position: relative;
+}
+.followers::before {
+	content: url('../../assets/followers-icon.svg');
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.following {
+	padding-left: 32px;
+	position: relative;
+}
+.following::before {
+	content: url('../../assets/following-icon.svg');
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

@@ -1,0 +1,8 @@
+.main {
+	margin: 0 auto;
+	max-width: 1366px;
+	height: calc(100vh - 76px);
+	padding: 28px 56px;
+	display: flex;
+	gap: 87px;
+}
