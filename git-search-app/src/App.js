@@ -2,7 +2,9 @@ import { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import InitialPage from './components/InitialPage/InitialPage';
+import Loader from './components/Loader/Loader';
 import Main from './components/Main/Main';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 import Context from './context';
 
 function App() {
@@ -26,12 +28,12 @@ function App() {
 				}}
 			>
 				<Header />
-				{!isReceived ? (
+				{isLoading ? (
+					<Loader />
+				) : !isReceived ? (
 					<InitialPage />
-				) : isLoading ? (
-					<h1>Loading</h1>
 				) : user.message ? (
-					<h1>User not found</h1>
+					<NotFoundPage />
 				) : (
 					<Main />
 				)}
