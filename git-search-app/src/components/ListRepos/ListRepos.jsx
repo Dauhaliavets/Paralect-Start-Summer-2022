@@ -7,24 +7,23 @@ import styles from './ListRepos.module.css';
 function ListRepos() {
 	const { repos } = useContext(Context);
 
-	console.log('repos: ', repos)
-
 	return (
 		<section className={styles.user_repositories}>
-			{!repos.length ? (
-				<EmptyListPage />
-			) : (
+			{repos?.length ? (
 				<div className={styles.repositories_list}>
 					<p>Repositories ({repos?.length})</p>
 					{repos &&
-						repos.map((repo) => (
+						repos.map((repo, ind) => (
 							<RepoItem
+								key={ind + 1}
 								url={repo.html_url}
 								name={repo.name}
 								description={repo.description}
 							/>
 						))}
 				</div>
+			) : (
+				<EmptyListPage />
 			)}
 		</section>
 	);
