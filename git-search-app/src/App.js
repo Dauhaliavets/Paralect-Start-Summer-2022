@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
+import InitialPage from './components/InitialPage/InitialPage';
 import Main from './components/Main/Main';
 import Context from './context';
 
@@ -26,7 +27,7 @@ function App() {
 			>
 				<Header />
 				{!isReceived ? (
-					<h1>Start with searching a GitHub user</h1>
+					<InitialPage />
 				) : isLoading ? (
 					<h1>Loading</h1>
 				) : user.message ? (
