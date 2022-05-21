@@ -2,9 +2,89 @@
 	width: 100%;
 }
 .repositories_list {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 130%;
 	color: #000000;
+}
+.pagination__container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 16px;
+}
+
+.paginated__interval {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #808080;
+}
+
+.btns__container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+	font-size: 14px;
+	line-height: 21px;
+	color: #808080;
+	gap: 16px;
+}
+
+.btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.btn__active {
+	width: 21px;
+	height: 25px;
+	background-color: #0064eb;
+	border-radius: 3px;
+	color: #ffffff;
+}
+.btn__break {
+	cursor: pointer;
+}
+
+.arrow__prev {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.arrow__prev a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	-webkit-mask: url('../../assets/arrow-prev.svg');
+	mask: url('../../assets/arrow-prev.svg');
+	background-color: #0064eb;
+}
+.arrow__next {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.arrow__next a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	-webkit-mask: url('../../assets/arrow-next.svg');
+	mask: url('../../assets/arrow-next.svg');
+	background-color: #0064eb;
+}
+.arrow__disabled a {
+	background-color: #808080;
 }
