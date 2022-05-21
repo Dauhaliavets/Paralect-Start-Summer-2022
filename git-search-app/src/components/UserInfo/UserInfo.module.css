@@ -40,24 +40,34 @@
 .followers {
 	padding-left: 32px;
 	position: relative;
+	flex-shrink: 0;
+	line-height: 24px;
 }
 .followers::before {
-	content: url('../../assets/followers-icon.svg');
+	content: '';
 	width: 24px;
 	height: 24px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	background-image: url('../../assets/followers-icon.svg');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .following {
 	padding-left: 32px;
 	position: relative;
+	flex-shrink: 0;
+	line-height: 24px;
 }
 .following::before {
-	content: url('../../assets/following-icon.svg');
+	content: '';
 	width: 24px;
 	height: 24px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	background-image: url('../../assets/following-icon.svg');
+	background-repeat: no-repeat;
+	background-position: center;
 }

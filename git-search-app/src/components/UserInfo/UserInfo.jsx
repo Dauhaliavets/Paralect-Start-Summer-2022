@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Context from '../../context';
-import styles from './UserInfo.module.css'
+import styles from './UserInfo.module.css';
+import transformCountFollow from '../../utils/transformCountFollow';
 
 function UserInfo() {
 	const { user } = useContext(Context);
@@ -17,8 +18,8 @@ function UserInfo() {
 				</a>
 			</h4>
 			<div className={styles.follow}>
-				<span className={styles.followers}>{user.followers} followers</span>
-				<span className={styles.following}>{user.following} following</span>
+				<span className={styles.followers}>{transformCountFollow(user.followers)} followers</span>
+				<span className={styles.following}>{transformCountFollow(user.following)} following</span>
 			</div>
 		</section>
 	);
