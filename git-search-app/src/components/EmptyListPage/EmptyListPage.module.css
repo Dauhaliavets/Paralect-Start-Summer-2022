@@ -1,0 +1,30 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: 1366px;
+	height: calc(100vh - 104px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+.content__image {
+	width: 110px;
+	height: 110px;
+	background-image: url('../../assets/empty-repos-list-icon.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.content__text {
+	max-width: 245px;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 140%;
+	text-align: center;
+	color: #808080;
+}
