@@ -15,7 +15,7 @@
 .content__image {
 	width: 110px;
 	height: 110px;
-	background-image: url('../../assets/search-icon-big.svg');
+	background-image: url('../../assets/user-default-icon.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
