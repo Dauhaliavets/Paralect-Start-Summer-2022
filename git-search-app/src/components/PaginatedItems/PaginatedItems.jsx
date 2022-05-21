@@ -35,7 +35,7 @@ function PaginatedItems({ itemsPerPage, totalRepos, username, repos }) {
 	useEffect(() => {
 		setPageCount(Math.ceil(totalRepos / itemsPerPage));
 		getRepos(username, itemsPerPage, itemOffset);
-	}, [itemOffset]);
+	}, [getRepos, itemsPerPage, totalRepos, username, itemOffset]);
 
 	const handlePageClick = (event) => {
 		setItemOffset(event.selected + 1);

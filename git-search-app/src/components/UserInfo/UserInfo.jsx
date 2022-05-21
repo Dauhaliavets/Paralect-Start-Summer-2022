@@ -9,11 +9,11 @@ function UserInfo() {
 	return (
 		<section className={styles.user__info}>
 			<div className={styles.user__avatar}>
-				<img className={styles.avatar} src={user.avatar_url} />
+				<img className={styles.avatar} src={user.avatar_url} alt={user.avatar_url}/>
 			</div>
 			<h3 className={styles.name}>{user.name}</h3>
 			<h4 className={styles.login}>
-				<a className={styles.login__link} href={user.html_url} target='_blank'>
+				<a className={styles.login__link} href={user.html_url} target='_blank' rel="noreferrer">
 					{user.login}
 				</a>
 			</h4>

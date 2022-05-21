@@ -2,10 +2,14 @@ import React, { useState, useContext } from 'react';
 import styles from './Header.module.css';
 import logo from '../../assets/logo-github.svg';
 import Context from '../../context';
+import useFetchUser from '../../hooks/useFetchUser';
+import useFetchRepos from '../../hooks/useFetchRepos';
 
 function Header() {
-	const { setUser, setIsLoading, setIsReceived, setRepos } = useContext(Context);
+	const { setIsLoading } = useContext(Context);
 	const [query, setQuery] = useState('');
+	const { getUser } = useFetchUser();
+	const { getRepos } = useFetchRepos();
 
 	const onChange = (value) => {
 		setQuery(value);
@@ -15,29 +19,7 @@ function Header() {
 		event.preventDefault();
 		setIsLoading(true);
 		getUser(query);
-	};
-
-	const getUser = async (username) => {
-		return await fetch(`https://api.github.com/users/${username}`)
-			.then((response) => response.json())
-			.then((response) => {
-				console.log('response: ', response)
-				setIsLoading(false);
-				setIsReceived(true);
-				setUser(response);
-
-				getRepos(username)
-			})
-			.catch((error) => console.log('error: ', error));
-	};
-
-	const getRepos = async (username) => {
-		return await fetch(`https://api.github.com/users/${username}/repos`)
-			.then((response) => response.json())
-			.then((response) => {
-				console.log('response: ', response)
-				setRepos(response);
-			});
+		getRepos(query);
 	};
 
 	return (
