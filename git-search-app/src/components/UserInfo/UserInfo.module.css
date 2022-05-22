@@ -26,14 +26,11 @@
 .login {
 	margin-top: 12px;
 	text-align: left;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 26px;
 	line-height: 130%;
 }
 .login__link {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 22px;
 	color: #0064eb;
 	text-decoration: none;
 }
@@ -92,14 +89,21 @@
 		padding: 0 30px;
 	}
 	.name {
-		font-size: 24px;
+		font-size: 22px;
 	}
 	.login {
 		margin: 0;
+		font-size: 18px;
+		line-height: 26px;
 	}
 	.follow {
-		margin-top: 8px;
+		margin-top: 0px;
 		flex-direction: column;
-		gap: 8px;
+		gap: 0px;
+	}
+	.followers,
+	.following {
+		font-size: 14px;
+		line-height: 24px;
 	}
 }

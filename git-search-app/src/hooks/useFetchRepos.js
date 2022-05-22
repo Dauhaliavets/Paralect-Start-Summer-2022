@@ -8,13 +8,7 @@ const useFetchRepos = () => {
 			return await fetch(
 				`https://api.github.com/users/${username}/repos?per_page=${perPage}&page=${page}`
 			)
-				.then((response) => {
-					if (response.status === 200) {
-						return response.json();
-					} else {
-						throw new Error('Bad status');
-					}
-				})
+				.then((response) => response.json())
 				.then((response) => {
 					setRepos(response);
 				})

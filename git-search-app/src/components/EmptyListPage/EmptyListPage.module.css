@@ -28,3 +28,9 @@
 	text-align: center;
 	color: #808080;
 }
+
+@media (max-width: 840px) {
+	.wrapper {
+		height: 100%;
+	}
+}

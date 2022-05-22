@@ -15,13 +15,13 @@
 }
 @media (max-width: 840px) {
 	.main {
-		height: 100%;
+		height: auto;
 		flex-direction: column;
 		align-items: center;
 	}
 }
 @media (max-width: 450px) {
 	.main {
-		padding: 20px;
+		padding: 14px;
 	}
 }

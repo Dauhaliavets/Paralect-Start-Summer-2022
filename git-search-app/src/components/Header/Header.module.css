@@ -23,7 +23,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 17px;
+	line-height: 24px;
 	display: flex;
 	align-items: center;
 	letter-spacing: 0.01em;
@@ -37,11 +37,11 @@
 .search_icon::before {
 	content: url('../../assets/search-icon.svg');
 	display: block;
-	width: 14px;
-	height: 14px;
+	width: 24px;
+	height: 24px;
 	position: absolute;
-	top: calc(50% - 7px);
-	left: 19px;
+	top: calc(50% - 12px);
+	left: 14px;
 	z-index: 1;
 }
 

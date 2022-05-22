@@ -1,14 +1,19 @@
 .repo_item {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	border-radius: 6px;
 	padding: 24px 32px;
+	overflow: hidden;
 }
 .repo_link {
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 29px;
-	color: #0064EB;
+	color: #0064eb;
+	-webkit-line-clamp: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 .repo_description {
 	min-height: 19px;
@@ -17,9 +22,13 @@
 	font-size: 16px;
 	line-height: 19px;
 	color: #000000;
-	white-space: nowrap;
+	-webkit-line-clamp: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	/* white-space: nowrap;
   overflow: hidden;
-	text-overflow: ellipsis;
+	text-overflow: ellipsis; */
 }
 @media (max-width: 650px) {
 	.repo_item {
@@ -34,10 +43,11 @@
 }
 @media (max-width: 450px) {
 	.repo_item {
-		padding: 16px 22px;
+		padding: 10px;
+		overflow: hidden;
 	}
 	.repo_link {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.repo_description {
 		font-size: 14px;

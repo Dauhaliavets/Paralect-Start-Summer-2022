@@ -18,7 +18,7 @@
 }
 @media (max-width: 450px) {
 	.repositories_list {
-		gap: 16px;
-		font-size: 26px;
+		gap: 14px;
+		font-size: 22px;
 	}
 }
