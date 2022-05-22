@@ -11,3 +11,14 @@
 	line-height: 130%;
 	color: #000000;
 }
+@media (max-width: 650px) {
+	.repositories_list {
+		font-size: 28px;
+	}
+}
+@media (max-width: 450px) {
+	.repositories_list {
+		gap: 16px;
+		font-size: 26px;
+	}
+}

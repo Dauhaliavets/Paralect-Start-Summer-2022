@@ -2,7 +2,6 @@
 	background-color: #FFFFFF;
 	border-radius: 6px;
 	padding: 24px 32px;
-	/* margin-top: 24px; */
 }
 .repo_link {
 	text-decoration: none;
@@ -12,9 +11,35 @@
 	color: #0064EB;
 }
 .repo_description {
+	min-height: 19px;
 	margin-top: 16px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 	color: #000000;
+	white-space: nowrap;
+  overflow: hidden;
+	text-overflow: ellipsis;
+}
+@media (max-width: 650px) {
+	.repo_item {
+		padding: 18px 24px;
+	}
+	.repo_link {
+		font-size: 20px;
+	}
+	.repo_description {
+		margin-top: 12px;
+	}
+}
+@media (max-width: 450px) {
+	.repo_item {
+		padding: 16px 22px;
+	}
+	.repo_link {
+		font-size: 18px;
+	}
+	.repo_description {
+		font-size: 14px;
+	}
 }

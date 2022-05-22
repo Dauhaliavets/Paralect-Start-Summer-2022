@@ -6,3 +6,22 @@
 	display: flex;
 	gap: 87px;
 }
+
+@media (max-width: 940px) {
+	.main {
+		gap: 30px;
+		padding: 30px;
+	}
+}
+@media (max-width: 840px) {
+	.main {
+		height: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media (max-width: 450px) {
+	.main {
+		padding: 20px;
+	}
+}

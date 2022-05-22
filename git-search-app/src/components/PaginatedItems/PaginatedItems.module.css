@@ -71,3 +71,9 @@
 .arrow__disabled a {
 	background-color: #808080;
 }
+
+@media (max-width: 620px) {
+	.pagination__container {
+		flex-direction: column;
+	}
+}
